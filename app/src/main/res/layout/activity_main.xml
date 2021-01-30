@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ecs.fullerton.edu.calculator.MainActivity">
+
+    <!--This table controls the 5 textView widgets above the buttons.-->
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintHorizontal_bias="0.971">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/stackThirdPosTextView"
+                style="@style/TextView"
+                android:gravity="right"
+                android:text="@string/stackThirdPosTextView"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/stackSecondPosTextView"
+                style="@style/TextView"
+                android:gravity="right"
+                android:text="@string/stackSecondPosTextView" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/stackFirstPosTextView"
+                style="@style/TextView"
+                android:gravity="right"
+                android:text="@string/stackFirstPosTextView" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/stackZeroPosTextView"
+                style="@style/TextView"
+                android:gravity="right"
+                android:text="@string/stackZeroPosTextView" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/inputStringTextView"
+                style="@style/TextView"
+                android:gravity="right"
+                android:text="@string/inputStringTextView"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <!--This table controls all of the button widgets that appear below the textViews.-->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/sevenButton"
+                style="@style/Button"
+                android:text="@string/seven" />
+
+            <Button
+                android:id="@+id/eightButton"
+                style="@style/Button"
+                android:text="@string/eight" />
+
+            <Button
+                android:id="@+id/nineButton"
+                style="@style/Button"
+                android:text="@string/nine" />
+
+            <Button
+                android:id="@+id/divButton"
+                style="@style/Button"
+                android:text="@string/div" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/fourButton"
+                style="@style/Button"
+                android:text="@string/four" />
+
+            <Button
+                android:id="@+id/fiveButton"
+                style="@style/Button"
+                android:text="@string/five" />
+
+            <Button
+                android:id="@+id/sixButton"
+                style="@style/Button"
+                android:text="@string/six" />
+
+            <Button
+                android:id="@+id/multButton"
+                style="@style/Button"
+                android:text="@string/mult" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/oneButton"
+                style="@style/Button"
+                android:text="@string/one" />
+
+            <Button
+                android:id="@+id/twoButton"
+                style="@style/Button"
+                android:text="@string/two" />
+
+            <Button
+                android:id="@+id/threeButton"
+                style="@style/Button"
+                android:text="@string/three" />
+
+            <Button
+                android:id="@+id/minButton"
+                style="@style/Button"
+                android:text="@string/min" />
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/decimalButton"
+                style="@style/Button"
+                android:text="@string/decimal" />
+
+            <Button
+                android:id="@+id/zeroButton"
+                style="@style/Button"
+                android:text="@string/zero" />
+
+            <Button
+                android:id="@+id/enterButton"
+                style="@style/Button"
+                android:text="@string/enter" />
+
+            <Button
+                android:id="@+id/plusButton"
+                style="@style/Button"
+                android:text="@string/plus" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/dropButton"
+                style="@style/Button"
+                android:text="@string/drop" />
+
+            <Button
+                android:id="@+id/delButton"
+                style="@style/Button"
+                android:text="@string/del" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
